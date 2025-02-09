@@ -158,6 +158,7 @@ input {
 .home .header .contain .links {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 .home .header .contain .links .border {
   align-items: center;
@@ -241,24 +242,35 @@ input {
   }
 }
 .home .header .contain .links .icon {
-  align-items: center;
   display: flex;
+  align-items: center;
   transform: translateY(-2%);
   font-size: 14px;
+  font-weight: bold;
   margin-left: 10px;
-}
-.home .header .contain .links .icon .search {
+  width: fit-content;
+  height: 25px;
+  padding: 0 3px;
   color: white;
-  border: solid 2px;
-  border-color: transparent transparent transparent rgb(255, 255, 255);
-  padding: 2px;
-  padding-left: 5px;
+  border-left: 3px solid #fff;
+  border-radius: 0;
+  transition: 0.5s;
 }
-.home .header .contain .links .icon .search:hover {
-  color: #ffffff79;
-  border-color: rgba(255, 255, 255, 0.667);
-  border-radius: 6px;
-  padding-right: 50px;
+
+.home .header .contain .links .icon .search {
+  display: block;
+  width: 0;
+  padding-left: 0;
+  transition: 0.5s;
+}
+.home .header .contain .links .icon:hover {
+  border: 1px solid rgba(255, 255, 255, 0.564);
+  border-radius: 8px;
+  height: 35px;
+}
+.home .header .contain .links .icon:hover .search {
+  width: 140px;
+  padding-left: 10px;
 }
 /* Start landing  */
 .home .landing {
@@ -566,6 +578,7 @@ input {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  transition: 10s;
 }
 .portfolio .images .container-img .box {
   flex-basis: 25%;
@@ -577,6 +590,13 @@ input {
 }
 .portfolio .images .container-img .img-w {
   position: relative;
+}
+.uuuu {
+  all: inherit;
+  display: none;
+}
+.heddinPro {
+  display: flex;
 }
 .portfolio .images .container-img .img-w:hover {
   filter: brightness(0.8);
@@ -1043,7 +1063,7 @@ input {
   margin-left: 3px;
 }
 .about-us .quote {
-  background-image: url(../imeg/quote-img.jpg);
+  background-image: url(/imeg/quote-img.jpg);
   height: 45vh;
   background-size: cover;
   filter: contrast(0.8);
@@ -1201,7 +1221,7 @@ input {
   }
 }
 .subscribe {
-  background-image: url(../imeg/subscribe-img.png);
+  background-image: url(/imeg/subscribe-img.png);
   height: 20vh;
   background-size: cover;
   filter: contrast(0.8);
@@ -1365,40 +1385,40 @@ input {
 }
 .contact-us .container .box .info .titel-one .titel {
   font-size: 13px;
-    letter-spacing: 1px;
-    color: #1f2021;
-    font-weight: 400;
-    margin-bottom: 25px;
+  letter-spacing: 1px;
+  color: #1f2021;
+  font-weight: 400;
+  margin-bottom: 25px;
 }
 .contact-us .container .box .info .titel-one .num {
   font-size: 13px;
-letter-spacing: 1px;
-color: #a8a8a8;
-font-weight: 400;
+  letter-spacing: 1px;
+  color: #a8a8a8;
+  font-weight: 400;
 }
 .contact-us .container .box .info .titel-two {
   margin-left: 20px;
 }
 .contact-us .container .box .info .titel-two .titel {
   font-size: 13px;
-    letter-spacing: 1px;
-    color: #1f2021;
-    font-weight: 400;
-    margin-bottom: 25px;
+  letter-spacing: 1px;
+  color: #1f2021;
+  font-weight: 400;
+  margin-bottom: 25px;
 }
 .contact-us .container .box .info .titel-two .address {
   font-size: 13px;
-letter-spacing: 1px;
-color: #a8a8a8;
-font-weight: 400;
+  letter-spacing: 1px;
+  color: #a8a8a8;
+  font-weight: 400;
 }
 @media (max-width: 775px) {
   .contact-us .container .message {
     width: 100%;
-}
+  }
   .contact-us .container .message form div {
     justify-content: center;
-}
+  }
   .contact-us .container .box {
     flex-direction: column;
   }
@@ -1407,7 +1427,7 @@ font-weight: 400;
     margin-bottom: 30px;
     gap: 60px;
     flex-direction: row;
-}
+  }
 }
 /* Start Footer */
 .footer {

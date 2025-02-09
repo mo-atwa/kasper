@@ -2,7 +2,7 @@
 
 A simple and modern one-page creative template built using **HTML, CSS, and JavaScript**. This design is based on a **PSD template from Graphberry** and has been converted into a fully responsive web page.  
 
-🚀 **Live Demo:** [preview](https://kasper-atwa.netlify.app/)
+🚀 **Live Demo:** [preview](https://kasper-atwa.netlify.app/)  
 📂 **GitHub Repository:** [Here](https://mo-atwa.github.io/kasper/)
 
 ## ✨ Features  
